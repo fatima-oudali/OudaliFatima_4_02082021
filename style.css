@@ -362,6 +362,10 @@ a:hover {
     z-index: 2;
 }
 
+figcaption {
+    color: black;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
