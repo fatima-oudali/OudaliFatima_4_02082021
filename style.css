@@ -293,7 +293,7 @@ a:hover {
 }
 
 .navbar-brand {
-    height: 40px;
+    height: auto;
     width: auto;
     padding: 3px 15px;
     font-size: 25px;
@@ -682,7 +682,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 17px;
 }
 
 .tight-width-whitespace {
@@ -897,6 +897,16 @@ footer li a {
         padding-right: constant(safe-area-inset-right);
     }
 }
+
+blockquote p {
+    font-size: 20px;
+    border: none;         
+}
+
+blockquote {
+    border: none;
+}
+
 
 @media (max-width: 767px) {
     .page-container {
