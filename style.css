@@ -716,7 +716,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    padding: 0;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
