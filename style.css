@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -960,6 +961,15 @@ blockquote {
 
 
 @media (max-width: 767px) {
+    .row {
+        margin:auto;
+    }
+    footer .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1096,17 +1106,20 @@ blockquote {
         width: 180px;
         height: 320px;
     }
+    .col-sm-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
