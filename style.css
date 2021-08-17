@@ -17,6 +17,13 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+a:focus{
+    box-shadow: -2px -2px 5px #FFDD8F, 2px 2px 5px #FFDD8F;
+}
+
+.social:focus{
+    box-shadow: none;
+}
 
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -44,9 +51,11 @@ a:hover {
     padding-right: 0;
 }
 
+
 .bloc-lg {
-    padding: 100px 50px;
+    padding:50px;
 }
+
 
 .bloc-md {
     padding: 50px;
@@ -152,6 +161,24 @@ a:hover {
 .d-bloc p a:hover {
     color: #FFDD8F;
 }
+
+.d-bloc .a-btn:focus,
+.d-bloc .navbar a:focus,
+.d-bloc .navbar-brand:focus,
+.d-bloc a:focus .icon-sm,
+.d-bloc a:focus .icon-md,
+.d-bloc a:focus .icon-lg,
+.d-bloc a:focus .icon-xl,
+.d-bloc h1 a:focus,
+.d-bloc h2 a:focus,
+.d-bloc h3 a:focus,
+.d-bloc h4 a:focus,
+.d-bloc h5 a:focus,
+.d-bloc h6 a:focus,
+.d-bloc p a:focus {
+    color: #FFDD8F;
+}
+
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
@@ -336,7 +363,9 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: #812304;
+    color: #FFDD8F!important;
+    border: none;
 }
 
 .navbar-toggle {
@@ -367,6 +396,8 @@ a:hover {
 figcaption {
     color: black;
 }
+
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -685,6 +716,10 @@ a {
 p {
     font-size: 17px;
 }
+#realisations {
+    font-size: 30px;
+    font-weight: 700;
+}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -705,10 +740,16 @@ p {
     font-weight: 700;
 }
 
+.cta-hero:focus {
+    color: #FFDD8F!important ;
+    box-shadow: -2px -2px 5px #FFDD8F, 2px 2px 5px #FFDD8F;
+}
+
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
 }
+
 
 h2 {
     text-align: center;
@@ -716,10 +757,11 @@ h2 {
 }
 
 h3 {
-    padding: 0;
+    margin-top: 0;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
+    line-height: 1.4;
 }
 
 .med-width-whitespace {
@@ -825,6 +867,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.webp");
+    padding: 50px;
 }
 
 .bg-presentation {
@@ -833,6 +876,13 @@ h4 {
 
 footer li a {
     color: #FFFFFF!important;
+}
+
+.bg-banniere p{
+    font-size: 40px;
+    font-weight: 700;
+    color:#FFDD8F!important;
+
 }
 
 @media (max-width: 1024px) {
