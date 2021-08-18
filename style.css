@@ -394,10 +394,6 @@ a:focus{
     z-index: 2;
 }
 
-figcaption {
-    color: black;
-}
-
 
 
 @media (min-width: 768px) {
@@ -879,7 +875,7 @@ footer li a {
     color: #FFFFFF!important;
 }
 
-.bg-banniere p{
+.bg-banniere h4{
     font-size: 40px;
     font-weight: 700;
     color:#FFDD8F!important;
@@ -909,13 +905,13 @@ footer li a {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -933,10 +929,6 @@ footer li a {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -945,8 +937,6 @@ footer li a {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -967,7 +957,7 @@ blockquote {
     footer .row {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .page-container {
